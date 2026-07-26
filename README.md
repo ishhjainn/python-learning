@@ -6,10 +6,11 @@ This repository documents my Python learning journey from fundamentals to advanc
 
 - Classes and Objects
 - Constructors
+- encapsulation 
 
 ## Upcoming Topics
 
-- Encapsulation
+
 - Abstraction
 - Inheritance
 - Polymorphism
