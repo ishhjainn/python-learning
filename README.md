@@ -7,7 +7,6 @@ This repository documents my Python learning journey from fundamentals to advanc
 - Classes and Objects
 - Constructors
 - Encapsulation
-- encapsulation 
 
 ## Upcoming Topics
 
