@@ -1,0 +1,44 @@
+"""
+Topic: Inheritance - Using super() with Constructor
+Author: Ishita Jain
+Description: Demonstrates how a child class can call the parent constructor
+             using super() and add its own attributes.
+"""
+
+
+# ======================================
+# Program 4 - Child Constructor + super()
+# ======================================
+
+
+# Parent Class / Base Class
+class Parent:
+
+    def __init__(self, address, city):
+
+        # Parent class attributes
+        self.address = address
+        self.city = city
+
+
+# Child Class / Derived Class
+class Student(Parent):
+
+    def __init__(self, name, section, address, city):
+
+        # Calling Parent class constructor
+        # This initializes address and city attributes.
+        super().__init__(address, city)
+
+        # Child class attributes
+        self.name = name
+        self.section = section
+
+
+# Creating object of Student class
+# Student constructor receives all values.
+s1 = Student("Ishita", "B", "123", "Delhi")
+
+
+# Accessing attributes from both Parent and Child classes
+print(s1.address, s1.city, s1.name, s1.section)
